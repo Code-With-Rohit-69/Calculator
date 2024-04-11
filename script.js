@@ -26,4 +26,30 @@ arr.forEach(function(btn){
             input.value = string;
         }
     })
+});
+
+document.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+        string = eval(string);
+        input.value = string;
+    }
+
+    else if(e.key === 'Escape'){
+        string = 0;
+        input.value = string;
+    }
+
+    else if(e.key === 'Backspace'){
+        string = string.slice(0, -1);
+        input.value = string;
+    }
+
+    else if (e.key === "+" || e.key === "-" || e.key === "*" || e.key === "/") {
+        string += e.key;
+        input.value = string;
+    }
+    else if (!isNaN(e.key)) {
+        string += e.key;
+        input.value = string;
+    }
 })
