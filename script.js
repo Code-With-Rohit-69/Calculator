@@ -40,7 +40,8 @@ document.addEventListener('keydown', function(e){
     }
 
     else if(e.key === 'Backspace'){
-        string = string.slice(0, -1);
+        // string = string.slice(0, -1);
+        string = string.substring(0, string.length-1);
         input.value = string;
     }
 
