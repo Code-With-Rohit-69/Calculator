@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+
+.container{
+    width: 280px;
+    height: 500px;
+    border: 2px solid grey;
+    border-radius: 50px;
+    padding-block: 8px;
+    overflow: hidden;
+    margin-inline: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btns-container{
+    padding-inline: 22px;
+}
+
+#input{
+    width: 100%;
+    height: 35%;
+    font-size: 2.8rem;
+    background-color: black;
+    padding-inline: 20px;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    outline: none;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons .big {
+    flex-grow: 1;
+    max-width: none;
+}
+
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button:active{
+    background-color: rgb(244, 195, 104);
+}
+
+.lightBlack{
+    background-color: #747474;
+    color: #fff;
+}
+
+.big{
+    max-width: 100px;
+}
+
+.orange{
+    background-color: orange;
+    color: #fff;
+}
